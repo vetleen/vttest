@@ -1,4 +1,4 @@
-##Vetletemplate:
+##
 
 check that repo can be cloned and made to work again
 try heroku pipeline for deploy

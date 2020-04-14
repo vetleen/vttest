@@ -1,1 +1,1 @@
-web: gunicorn vetletemplate.wsgi --log-file -
+web: gunicorn vttest.wsgi --log-file -
