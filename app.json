@@ -2,7 +2,7 @@
   "environments": {
     "test": {
       "scripts": {
-        "test-setup": "python manage.py collectstatic && python test_scripts.py",
+        "test-setup": "python manage.py collectstatic",
         "test": "python manage.py test --keepdb"
       }
     }
