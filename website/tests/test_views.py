@@ -12,10 +12,6 @@ def yellow(message):
     ''' A custom function that sets strings meant for the consoll to yellow so that they stand out'''
     return '\n' + '\033[1;33;40m ' + message + '\x1b[0m'
 
-import os
-#if '/app' in os.environ['HOME']:
-#    import django_heroku
-#    django_heroku.settings(locals())
 
 print(os.environ['HOME'])
 
