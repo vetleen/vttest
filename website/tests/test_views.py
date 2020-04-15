@@ -13,8 +13,6 @@ def yellow(message):
     return '\n' + '\033[1;33;40m ' + message + '\x1b[0m'
 
 
-print(os.environ['HOME'])
-
 # Create your tests here.
 class TestThatUrlsExist(TestCase):
     """
