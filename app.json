@@ -2,6 +2,8 @@
   "environments": {
     "test": {
       "scripts": {
+        "test-setup": "python manage.py migrate",
+        "test-setup": "python manage.py collectstatic",
         "test": "python manage.py test"
       }
     }
