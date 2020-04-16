@@ -2,10 +2,7 @@
   "environments": {
     "test": {
       "image": "heroku/python",
-      "buildpacks":
-        {
-          "url": "https://github.com/heroku/heroku-buildpack-python"
-        },
+
       "addons": ["heroku-postgresql:in-dyno"],
       "scripts": {
         "test-setup": "python manage.py collectstatic",
