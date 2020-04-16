@@ -5,7 +5,7 @@
 
       "addons": ["heroku-postgresql:in-dyno"],
       "scripts": {
-        "test-setup": "pg_ctl -D /app/.indyno/vendor/postgresql/data -l logfile start && python manage.py collectstatic",
+        "test-setup": "python manage.py collectstatic",
         "test": "python manage.py test"
 
       }
