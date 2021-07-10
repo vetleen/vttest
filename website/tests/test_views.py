@@ -12,6 +12,15 @@ def yellow(message):
     ''' A custom function that sets strings meant for the consoll to yellow so that they stand out'''
     return '\n' + '\033[1;33;40m ' + message + '\x1b[0m'
 
+from django.db import connection
+print("connection.settings_dict['ENGINE']: %s"%(connection.settings_dict['ENGINE']))
+print("connection.settings_dict['NAME']: %s"%(connection.settings_dict['NAME']))
+print("connection.settings_dict['USER']: %s"%(connection.settings_dict['USER']))
+print("connection.settings_dict['PASSWORD']: %s"%(connection.settings_dict['PASSWORD']))
+print("connection.settings_dict['OPTIONS']: %s"%(connection.settings_dict['OPTIONS']))
+print("connection.settings_dict['HOST']: %s"%(connection.settings_dict['HOST']))
+print("connection.settings_dict]: %s"%(connection.settings_dict))
+
 # Create your tests here.
 class TestThatUrlsExist(TestCase):
     """

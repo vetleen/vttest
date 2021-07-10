@@ -1,0 +1,14 @@
+{
+  "environments": {
+    "test": {
+      "image": "heroku/python",
+
+      "addons": ["heroku-postgresql:in-dyno"],
+      "scripts": {
+        "test-setup": "python manage.py collectstatic",
+        "test": "python manage.py test"
+
+      }
+    }
+  }
+}
